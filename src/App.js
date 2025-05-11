@@ -10,7 +10,6 @@ const App = () => {
   const [showRegister, setShowRegister] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Check if the user is logged in when the app loads
   useEffect(() => {
     const user = localStorage.getItem("user");
     if (user) {
